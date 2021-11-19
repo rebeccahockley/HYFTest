@@ -1,0 +1,206 @@
+body {
+    max-width: 1200px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 0 auto !important;
+  }
+  
+  /* nav bar starts here */
+  
+  #header-logo {
+    padding: 8px 0px 10px 40px;  /* to ensure logo was centered and slightly indented */
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    padding: 13px;
+    letter-spacing: 0.05em;
+  }
+  
+  nav li { /* to make horizontal instead of vertical*/
+    display: inline-block;
+  }
+  
+  nav a:hover {  /* for when you hover over the links, turn white text with pink background */
+    color: white;
+    background-color: rgb(222, 98, 98);
+  }
+  
+  .navbarline {
+    width: 1200px;
+    height: 5px;
+    background: linear-gradient(to top, transparent 1%, rgb(242, 242, 242) 80%, rgb(237, 237, 237) 10%, transparent 0%, transparent 0%);
+  }
+  
+  /* main image and text overlay */
+  
+  main {
+    position: relative;
+    text-align: left;
+  }
+  
+  #main-img {
+    padding-top: 50px;
+    z-index: 1;
+  }
+  
+  .main-text {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    z-index: 2;
+  }
+  
+  .main-text h2 {
+    font-size: 50px;
+    line-height: 0.5em;
+  }
+  
+  .main-text p {
+    font-size: 15px;
+    line-height: 1.6em;
+  }
+  
+  .beat {
+    color: rgb(222, 98, 98);
+  }
+  
+  /* 6 paragraphs start here. Originally had it so that I made 3 columns and 2 rows - didn't use a table just used different class names for each and it got very confusing. Changed so that they are all the same for it to look and feel cleaner, they are formatted the same. Did not use a table as div's felt more appropriate */
+  
+  .section-para {
+    width: 350px;
+    margin: 20px 20px 0px 20px;
+    padding-bottom: 15px;
+    display: inline-block;
+  }
+  
+  .section-img {
+    float: left;
+    margin: 30px 15px 20px 10px;
+  }
+  
+  .section-text {
+    padding-left: 59px;
+    font-size: 12px;
+    color: grey;
+    line-height: 1.75em;
+    letter-spacing: 0.02em;
+  }
+  
+  /* pseudo element for the first line of the paragraphs to change the font of the 'headings' in each paragraph. */
+  
+  section p::first-line {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 3em;
+    letter-spacing: -0.02em;
+  }
+  
+  /* image and booking form together form the footer, use div not table */
+  /* took many MANY attempts to get the booking form styled how i wanted it and even then - the radio buttons could have changed colour but I honestly could not get it took work after trying several different ways  */
+  
+  #footer-img {
+    float: left;
+    margin-top: 30px; /* to ensure it is inline and a large enough gap in between here and the 6 paragraphs */
+  }
+  
+  .footer {
+    display: inline-block;
+    width: 644px;
+    height: 448px;
+    background-color: rgb(222, 98, 98);
+    color: white;
+    padding: 15px 40px 0px 40px;
+    line-height: 2.5em;
+    font-size: 12px;
+    letter-spacing: 0.10em;
+    margin-top: 30px;
+    }
+  
+  #form-title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+  
+  .name-textbox {
+    float: left;
+    width: 70%; /* must add up to 100% with phone-textbox column */
+  }
+  
+  .phone-textbox {
+    float: left;
+    width: 30%;
+    }
+  
+  .appt-textbox {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  .message-textbox {
+    float: left;
+    width: 60%
+  }
+  
+  input[type=text], input[type=email], select, textarea {
+    width: 90%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  
+  input[type=date], select, textarea {
+    width: 90%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  
+  input[type=message], select, textarea {
+    width: 90%;
+    padding: 4px 68px 90px 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: black;
+  }
+  
+  input[type=radio] {
+    color: white;
+  }
+  
+  #radio {
+    margin-bottom: 0px; /* yes and no are inline */
+  }
+  
+  button {
+    padding: 10px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-right: 30px;
+    background-color: rgb(245, 245, 245)
+  }
+  
+  button:hover {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 3px 3px 5px;
+  }
+  
+  button:active {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 3px 3px 5px;
+    transform: translateY(3px);
+  }

@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>Rebecca's HYF Project</title>
+    <link rel="stylesheet" href="testcss.css">
+</head>
+<body>
+  
+      <!-- navigation bar -->
+      <!-- Used a list and then floated horizontally, to the right, and took away the default styling of lists to create the hover feature -->
+ <header id="home">
+  <img id="header-logo" src="Images/logo.png" width="100">
+   <nav>
+    <ul>
+     <li><a href="#home">HOME</a></li>
+     <li><a href="#aboutus">ABOUT US</a></li>
+     <li><a href="#">DEPARTMENTS</a></li>
+     <li><a href="#bookingform">APPOINTMENTS</a></li>
+     <li><a href="#">DOCTORS</a></li>
+     <li><a href="#">BLOG</a></li>
+     <li><a href="#bookingform">CONTACT</a></li>
+    </ul>
+   </nav>
+    <div class="navbarline">
+    </div>
+ </header>
+  
+    <!-- large image with text overlay -->
+    <!-- large image will be 1200px as it fills the page nicely, make sure to add z-index. use a <span> for the pink BEAT in the header.  -->
+  <main>
+   <img id="main-img" src="Images/largeimg_edited.jpg" alt="nurse in white coat on pale blue background" width="1200">
+    <div class="main-text">
+     <h2>HEART<span class="beat">BEAT</span>.</h2>
+      <p>
+        Care for your Loved Ones from the Experts in the<br>Medical and Hospitality Industry.
+      </p>
+    </div>
+  </main> 
+  
+    <!-- 6 paragraphs, 2 rows x 3 columns, not table use divs instead -->
+    <!-- Each paragraph can have same classes as they are formatting in css the same, making it cleaner coding. remember alt texts  -->
+   <section>
+    <div class="section-para" id="aboutus">
+     <img class="section-img" src="Images/heart.png" alt="black heart icon with heart beat monitor line across" width="50">
+      <div class="section-text">
+        <p>
+         INTENSIVE CARE<br>
+         Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.
+        </p>
+      </div>
+    </div>
+    <div class="section-para">
+     <img class="section-img" src="Images/family.png" width="50">
+      <div class="section-text">
+        <p>
+         FAMILY PLANNING<br>
+         Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all others graphics are optimized.
+        </p>
+      </div>
+    </div>
+    <div class="section-para">
+     <img class="section-img" src="Images/brain.png" alt="black icon of human head with brain outlined" width="50">
+      <div class="section-text">
+        <p>
+         EXPERT CONSULTATION<br>
+         Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.
+        </p>
+      </div>
+     </div>    
+    <div class="section-para">
+     <img class="section-img" src="Images/tooth.png" alt="black outline of a human tooth cartoon style" width="50">
+      <div class="section-text">
+        <p>
+          DENTAL SERVICES<br>
+          Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.
+        </p>
+      </div>
+    </div>
+    <div class="section-para">
+     <img class="section-img" src="Images/xray2.png" alt="black icon of cartoon human holding an xray of their chest" width="50">
+      <div class="section-text">
+        <p>
+          X-RAY SERVICES<br>
+          Looks beautiful & ultra-sharp on Retina Screen Displays. Retina Icons, Fonts & all others graphics are optimized.
+        </p>
+      </div>
+    </div>
+    <div class="section-para">
+     <img class="section-img" src="Images/ambulance (2).png" alt="black outline of a cartoon ambulance" width="50">
+      <div class="section-text">
+        <p>
+          24X7 EMERGENCY<br>
+          Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- footer containing image of girl in dentist chair -->
+    <!-- on the right of the image, a booking form -->
+    <!-- "name=" is only referenced in js, but included for good practise -->
+    <!-- unsure how to make links to a seperate page so made them to the same page ie. when you click the confirm booking button, it just reloads the page -->
+  <footer>
+   <img id="footer-img" src="Images/HYFTestPicture (4).png" alt="young girl in dentist chair with a dental nurse either side of her" width="475">
+    <div class="footer">
+     <form id="bookingform">
+          <p id="form-title">
+            Book an Appointment.
+          </p>
+      <div>
+          <div class="name-textbox">
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+        </div>
+          <div class="phone-textbox">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone">
+        </div>
+      </div>
+       <div>
+          <div class="name-textbox">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email">
+          </div>
+          <div class="phone-textbox">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="date of birth">
+          </div>
+       </div>
+       <div>
+          <div class="appt-textbox">
+            <label for="adate">Appointment Date:</label>
+            <input type="date" name="adate">
+          
+            <p id="radio">Booked with Us Before?:</p>
+              <input type="radio" name="no" checked>
+              <label>Yes</label>
+              <input type="radio" name="no">
+              <label>No</label>
+          </div>                                  
+          <div class="message-textbox">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+       </div>
+          <div>
+            <button type="submit" formaction="https://codepen.io/hockleyr/full/WNOBJBE">CONFIRM BOOKING</button>
+          </div>
+     </form>
+    </div>
+  </footer>
+ </body>
+</html>
